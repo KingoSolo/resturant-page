@@ -1,4 +1,4 @@
- import loadPage from './pageLoad'
+ import pageLoad from './pageLoad'
 
 //load page
-loadPage();
+pageLoad();

@@ -1,7 +1,10 @@
-import createResturantHomePage  from './resturant';
+import createRestaurantHomePage  from './resturant';
+import createTabs from './tabs'
 
 function initialLoad(){
-    createResturantHomePage();
+    createTabs();
+    createRestaurantHomePage();
 }
+
 
 export default initialLoad;

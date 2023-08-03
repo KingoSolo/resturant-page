@@ -1,0 +1,36 @@
+/* style.css */
+
+/* Common styles for all tabs */
+.home,
+.menu,
+.contact {
+  cursor: pointer; 
+  padding: 10px 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  margin: 5px;
+  font-size: 18px; 
+}
+
+
+.home {
+  background-color:#f0f0f0; 
+  color: #333;
+}
+
+.menu {
+  background-color: #e0e0e0;
+  color: #333; 
+}
+
+.contact {
+  background-color: #d0d0d0; 
+  color: #333; 
+}
+
+.home.active,
+.menu.active,
+.contact.active {
+  background-color: #007bff; 
+  color: #fff; 
+}
