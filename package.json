@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "a simple resturant page",
   "main": "index.js",
+  "watch": "webpack --watch",
   "scripts": {
     "test": "jest"
   },

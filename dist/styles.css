@@ -1,36 +1,21 @@
-/* style.css */
-
-/* Common styles for all tabs */
-.home,
-.menu,
-.contact {
-  cursor: pointer; 
-  padding: 10px 20px; 
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
-  margin: 5px;
-  font-size: 18px; 
-}
-
-
-.home {
-  background-color:#f0f0f0; 
-  color: #333;
-}
-
-.menu {
-  background-color: #e0e0e0;
-  color: #333; 
-}
-
-.contact {
-  background-color: #d0d0d0; 
-  color: #333; 
-}
-
-.home.active,
-.menu.active,
-.contact.active {
-  background-color: #007bff; 
-  color: #fff; 
-}
+/* Styles for the navigation bar */
+.nav-bar {
+    background-color: #333; /* Background color for the navbar */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .nav-item {
+    color: #fff; /* Text color for the tabs */
+    padding: 10px 20px; /* Add padding to create space around the text */
+    margin: 0 5px; /* Add margin to create space between the tabs */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
+  }
+  
+  .nav-item:hover {
+    background-color: #555; /* Background color on hover */
+  }
+  
