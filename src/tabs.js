@@ -10,66 +10,58 @@ const createTabs = () => {
     tabsContainer.classList.add("nav-bar");
     
     // Create the three divs for the tabs
-    const div1 = document.createElement("div");
-    const div2 = document.createElement("div");
-    const div3 = document.createElement("div");
+    const home = document.createElement("div");
+    const menu = document.createElement("div");
+    const contact = document.createElement("div");
 
     // Set ids for the divs
-    div1.setAttribute("id","home-btn");
-    div2.setAttribute("id","menu-btn");
-    div3.setAttribute("id","contact-btn");
+    home.setAttribute("id","home-btn");
+    menu.setAttribute("id","menu-btn");
+    contact.setAttribute("id","contact-btn");
 
     // Set classes for the divs
-    div1.classList.add("nav-item");
-    div2.classList.add("nav-item");
-    div3.classList.add("nav-item");
+    home.classList.add("nav-item");
+    menu.classList.add("nav-item");
+    contact.classList.add("nav-item");
 
     // Set text content for the tabs
-    div1.textContent = "Home";
-    div2.textContent = "Menu";
-    div3.textContent = "Contact";
+    home.textContent = "Home";
+    menu.textContent = "Menu";
+    contact.textContent = "Contact";
 
     // Append the divs to the tabs container
-    tabsContainer.appendChild(div1);
-    tabsContainer.appendChild(div2);
-    tabsContainer.appendChild(div3);
+    tabsContainer.appendChild(home);
+    tabsContainer.appendChild(menu);
+    tabsContainer.appendChild(contact);
 
     // Append the tabs container to content
     content.appendChild(tabsContainer);
-
-    // Create a container for the page content
-    // const pageContainer = document.createElement("div");
-    // // pageContainer.classList.add("page-content-1");
-    // content.appendChild(pageContainer);
-
    
-    div1.addEventListener('click',() => {
-        const c = document.querySelector('#page-content')
-        clearContent(c);
+    home.addEventListener('click',() => {
+        const pageCont = document.querySelector('#page-content')
+        clearContent(pageCont);
         createRestaurantHomePage()
     });
 
-    div2.addEventListener('click',() => {
-        const c = document.querySelector('#page-content')
-        clearContent(c);
+    menu.addEventListener('click',() => {
+        const pageCont = document.querySelector('#page-content')
+        clearContent(pageCont);
         createMenuPage()
-        // pageContainer.appendChild(createMenuPage());
+        
     });
 
-    div3.addEventListener('click',() => {
-        const c = document.querySelector('#page-content')
-        clearContent(c);
+    contact.addEventListener('click',() => {
+        const pageCont = document.querySelector('#page-content')
+        clearContent(pageCont);
         createContact()
-        // pageContainer.appendChild(createContact());
-    });
-};
+       
+});
+}
 
 function clearContent(pageContainer) {
-    if (pageContainer){
-        
+    if (pageContainer){    
         pageContainer.remove()
     }
 }
-
 
 export default createTabs;
