@@ -1,9 +1,15 @@
 
 //resturant.js
 const createRestaurantHomePage = () => {
-    const content = document.querySelector('#content');
-    const pageContent = document.createElement("div");
-    pageContent.classList.add('page-content');
+    // const content = document.querySelector('#content');
+    // const pageContent = document.createElement("div");
+    // pageContent.classList.add('page-content');
+    const content = document.querySelector("#content");
+    let pageContent = document.createElement("div");
+    pageContent.setAttribute("id", "page-content")
+
+    
+    // pageContent.classList.add = ("page-content page-content-home");
 
 
     //Create and append image element

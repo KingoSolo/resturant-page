@@ -1,7 +1,11 @@
 const createContact= () =>{
+    
+    // const contact = document.createElement('div')
+    // contact.classList.add('contact')
+
     const content = document.querySelector("#content");
-    const contact = document.createElement('div')
-    contact.classList.add('contact')
+    let pageContent = document.createElement("div");
+    pageContent.setAttribute("id", "page-content")
   
     const phoneNumber = document.createElement('p')
     phoneNumber.textContent = '📞 123 456 789'
@@ -13,11 +17,11 @@ const createContact= () =>{
     restaurantLocation.src = 'https://goo.gl/maps/kWGHidZTYqVZJvAd8'
     restaurantLocation.alt = 'Mozzafiato restaurant location'
   
-    contact.appendChild(phoneNumber)
-    contact.appendChild(address)
-    contact.appendChild(restaurantLocation)
+    pageContent.appendChild(phoneNumber)
+    pageContent.appendChild(address)
+    pageContent.appendChild(restaurantLocation)
   
-    content.appendChild(contact)
+    content.appendChild(pageContent)
   }
   
   

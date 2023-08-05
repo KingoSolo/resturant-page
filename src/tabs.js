@@ -37,34 +37,39 @@ const createTabs = () => {
     // Append the tabs container to content
     content.appendChild(tabsContainer);
 
-    // Create a container for the dynamic page content
-    const pageContainer = document.createElement("div");
-    pageContainer.classList.add("page-content");
-    content.appendChild(pageContainer);
+    // Create a container for the page content
+    // const pageContainer = document.createElement("div");
+    // // pageContainer.classList.add("page-content-1");
+    // content.appendChild(pageContainer);
 
-    // Event listeners for the tabs
+   
     div1.addEventListener('click',() => {
-        clearContent();
-        pageContainer.appendChild(createRestaurantHomePage());
+        const c = document.querySelector('#page-content')
+        clearContent(c);
+        createRestaurantHomePage()
     });
 
     div2.addEventListener('click',() => {
-        clearContent();
-        pageContainer.appendChild(createMenuPage());
+        const c = document.querySelector('#page-content')
+        clearContent(c);
+        createMenuPage()
+        // pageContainer.appendChild(createMenuPage());
     });
 
     div3.addEventListener('click',() => {
-        clearContent();
-        pageContainer.appendChild(createContact());
+        const c = document.querySelector('#page-content')
+        clearContent(c);
+        createContact()
+        // pageContainer.appendChild(createContact());
     });
 };
 
-function clearContent () {
-    const content = document.querySelector("#content");
-    const pageContent = document.querySelector(".page-content");
-    if(pageContent){
-        content.removeChild(pageContent);
+function clearContent(pageContainer) {
+    if (pageContainer){
+        
+        pageContainer.remove()
     }
 }
+
 
 export default createTabs;

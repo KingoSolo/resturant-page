@@ -1,21 +1,30 @@
+body, #content {
+    margin: 0;
+    padding:0;
+}
+
 /* Styles for the navigation bar */
 .nav-bar {
     background-color: #333; /* Background color for the navbar */
     display: flex;
     justify-content: center;
     padding: 10px;
+    
   }
   
   .nav-item {
-    color: #fff; /* Text color for the tabs */
-    padding: 10px 20px; /* Add padding to create space around the text */
-    margin: 0 5px; /* Add margin to create space between the tabs */
+    color: #fff; 
+    padding: 10px 20px; 
+    margin: 0 5px; 
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
+    transition: background-color 0.3s ease;
   }
   
   .nav-item:hover {
     background-color: #555; /* Background color on hover */
   }
   
+  .clear{
+    background-color: red;
+  }

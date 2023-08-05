@@ -2,10 +2,14 @@
 
 
 const createMenuPage = () =>{
-    const content = document.querySelector("#content");
-    const pageContent = document.createElement("div");
-    pageContent.classList.add = ("page-content");
+    // const content = document.querySelector("#content");
+    // const pageContent = document.createElement("div");
+    // pageContent.classList.add = ("page-content");
 
+    const content = document.querySelector("#content");
+    let pageContent = document.createElement("div");
+    pageContent.setAttribute("id", "page-content")
+    
     const heading = document.createElement("h1");
     heading.textContent = "Our menu";
     pageContent.appendChild(heading);
