@@ -14,9 +14,7 @@ const createContact= () =>{
     address.textContent = '🏠 Hollywood Boulevard 42, Los Angeles, USA'
   
     const restaurantLocation = document.createElement('img')
-    restaurantLocation.src = 'https://goo.gl/maps/kWGHidZTYqVZJvAd8'
-    restaurantLocation.alt = 'Mozzafiato restaurant location'
-  
+   
     pageContent.appendChild(phoneNumber)
     pageContent.appendChild(address)
     pageContent.appendChild(restaurantLocation)
